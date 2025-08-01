@@ -1,27 +1,14 @@
+
+
+
 ```mermaid
 graph TD
 
-  %% === TITLE ===
-  TITLE[AI-Integrated Document Governance System]
 
 
-  %% === USER AREA ===
-  subgraph Users
-    USER[USER]
-    USER_ROLE[USER_ROLE]
-    USER -->|HAS_ROLE| USER_ROLE
-    USER_ROLE -->|CAN_PERFORM| TASK
-    TASK -->|ASSIGNED_TO| USER
-  end
 
-  %% === AI AGENT AREA ===
-  subgraph AI Agents
-    AIAGENT[AIAGENT]
-    AIAGENT_ROLE[AIAGENT_ROLE]
-    AIAGENT -->|HAS_ROLE| AIAGENT_ROLE
-    AIAGENT_ROLE -->|CAN_PERFORM| TASK
-    TASK -->|ASSIGNED_TO| AIAGENT
-  end
+
+
 
   %% === DOMAIN AREA ===
   subgraph Automated QA System
@@ -56,7 +43,28 @@ graph TD
     AIMODEL -->|AUDITED_BY| AUDITENTRY
 
     POLICY -->|ENFORCES| SCOPE
+
+%% === USER AREA ===
+  subgraph Users
+    USER[USER]
+    USER_ROLE[USER_ROLE]
+    USER -->|HAS_ROLE| USER_ROLE
+    USER_ROLE -->|CAN_PERFORM| TASK
+    TASK -->|ASSIGNED_TO| USER
   end
+
+  %% === AI AGENT AREA ===
+  subgraph AI Agents
+    AIAGENT[AIAGENT]
+    AIAGENT_ROLE[AIAGENT_ROLE]
+    AIAGENT -->|HAS_ROLE| AIAGENT_ROLE
+    AIAGENT_ROLE -->|CAN_PERFORM| TASK
+    TASK -->|ASSIGNED_TO| AIAGENT
+  end
+  end
+
+
+  
 
   %% === STYLE CLASSES ===
   classDef titleStyle fill:#121212,stroke:#1e293b,stroke-width:2px;
@@ -70,6 +78,6 @@ graph TD
   class TITLE titleStyle
   class TASK taskStyle
   class USER_ROLE,AIAGENT_ROLE roleStyle
-  class REVIEW,DOCUMENT,POLICY reviewStyle
+  class REVIEW,DOCUMENT,POLICY taskStyle
   class SCOPE scopeStyle
 ```
