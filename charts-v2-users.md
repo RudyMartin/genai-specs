@@ -3,7 +3,9 @@ graph TD
 
   %% === TITLE ===
   TITLE[AI-Integrated Document Governance System]
-
+  TITLE --> USER
+  TITLE --> AIAGENT
+  TITLE --> DOCUMENT
 
   %% === USER AREA ===
   subgraph Users
