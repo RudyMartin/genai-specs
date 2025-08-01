@@ -19,7 +19,7 @@ graph TD
 
 
   %% === DOMAIN AREA ===
-  subgraph Domain
+  subgraph Automated QA System
     DOCUMENT[DOCUMENT]
     REVIEW[REVIEW]
     FINDING[FINDING]
@@ -56,9 +56,17 @@ graph TD
   classDef titleStyle fill:#121212,stroke:#1e293b,stroke-width:2px;
   classDef taskStyle fill:#C55422,stroke:#ca8a04,stroke-width:2px;
   classDef roleStyle fill:#238196,stroke:#7c3aed,stroke-width:2px;
+  classDef documentStyle fill:#FFB400,stroke:#7c3aed,stroke-width:2px;
+  classDef reviewStyle fill:#2C6937,stroke:#7c3aed,stroke-width:2px;
+  classDef scopeStyle fill:#911A5B,stroke:#7c3aed,stroke-width:2px;
+
+
+
 
   %% === APPLY STYLES ===
   class TITLE titleStyle
   class TASK taskStyle
   class USER_ROLE,AIAGENT_ROLE roleStyle
+  class REVIEW,DOCUMENT,POLICY reviewStyle
+  class SCOPE scopeStyle
 ```
