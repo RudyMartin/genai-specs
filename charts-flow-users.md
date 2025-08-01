@@ -16,14 +16,7 @@ graph TD
     TASK --> USER
   end
 
-  %% === AI AGENT AREA ===
-  subgraph AI Agents
-    AIAGENT[AIAGENT]
-    AIAGENT_ROLE[AIAGENT_ROLE]
-    AIAGENT --> AIAGENT_ROLE
-    AIAGENT_ROLE --> TASK
-    TASK --> AIAGENT
-  end
+
 
   %% === DOMAIN AREA ===
   subgraph Domain
@@ -60,7 +53,7 @@ graph TD
   end
 
   %% === STYLE CLASSES ===
-  classDef titleStyle fill:#e2e8f0,stroke:#1e293b,stroke-width:2px;
+  classDef titleStyle fill:#121212,stroke:#1e293b,stroke-width:2px;
   classDef taskStyle fill:#fef9c3,stroke:#ca8a04,stroke-width:2px;
   classDef roleStyle fill:#ede9fe,stroke:#7c3aed,stroke-width:2px;
 
