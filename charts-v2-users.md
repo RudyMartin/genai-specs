@@ -62,22 +62,35 @@ graph TD
     TASK -->|ASSIGNED_TO| AIAGENT
   end
   end
-
-
   
 
-  %% === STYLE CLASSES ===
-  classDef titleStyle fill:#121212,stroke:#1e293b,stroke-width:2px;
-  classDef taskStyle fill:#C55422,stroke:#ca8a04,stroke-width:2px;
-  classDef roleStyle fill:#238196,stroke:#7c3aed,stroke-width:2px;
-  classDef documentStyle fill:#FFB400,stroke:#7c3aed,stroke-width:2px;
-  classDef reviewStyle fill:#2C6937,stroke:#7c3aed,stroke-width:2px;
-  classDef scopeStyle fill:#911A5B,stroke:#7c3aed,stroke-width:2px;
+%% === Corporate Palette Class Definitions ===
+classDef darkGreen fill:#05341D,stroke:#05341D,color:#FFFFFF;
+classDef offWhite fill:#EDEBE9,stroke:#EDEBE9,color:#000000;
+classDef blue fill:#085280,stroke:#085280,color:#FFFFFF;
+classDef white fill:#FFFFFF,stroke:#000000,color:#000000;
+classDef darkNeutral fill:#121212,stroke:#000000,color:#FFFFFF;
+
+classDef burntOrange fill:#C55422,stroke:#C55422,color:#FFFFFF;
+classDef teal fill:#238196,stroke:#238196,color:#FFFFFF;
+
+classDef mustardYellow fill:#FFB400,stroke:#FFB400,color:#000000;
+classDef forestGreen fill:#2C6937,stroke:#2C6937,color:#FFFFFF;
+classDef deepMagenta fill:#911A5B,stroke:#911A5B,color:#FFFFFF;
+
+
 
   %% === APPLY STYLES ===
-  class TITLE titleStyle
-  class TASK taskStyle
-  class USER_ROLE,AIAGENT_ROLE roleStyle
-  class REVIEW,DOCUMENT,POLICY taskStyle
-  class SCOPE scopeStyle
+  class USER teal
+  class USER_ROLE teal
+  class AIAGENT blue
+  class AIAGENT_ROLE blue
+  class TASK burntOrange
+  class DOCUMENT mustardYellow
+  class REVIEW forestGreen
+  class FINDING deepMagenta
+  class POLICY darkNeutral
+  class SCOPE white
+  class AUDITENTRY darkNeutral
+  class AIMODEL darkNeutral
 ```
