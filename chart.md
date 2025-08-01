@@ -1,6 +1,6 @@
 
 
-
+```mermaid
 erDiagram
   USER ||--o{ DOCUMENT : "CREATED"
   USER ||--o{ REVIEW : "WROTE"
@@ -22,3 +22,4 @@ erDiagram
   USER }o--|| ROLE : "HAS_ROLE"
   ROLE ||--o{ TASK : "CAN_PERFORM"
   TASK }o--|| USER : "ASSIGNED_TO"
+```
