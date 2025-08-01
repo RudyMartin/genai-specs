@@ -54,8 +54,8 @@ graph TD
 
   %% === STYLE CLASSES ===
   classDef titleStyle fill:#121212,stroke:#1e293b,stroke-width:2px;
-  classDef taskStyle fill:#fef9c3,stroke:#ca8a04,stroke-width:2px;
-  classDef roleStyle fill:#ede9fe,stroke:#7c3aed,stroke-width:2px;
+  classDef taskStyle fill:#C55422,stroke:#ca8a04,stroke-width:2px;
+  classDef roleStyle fill:#238196,stroke:#7c3aed,stroke-width:2px;
 
   %% === APPLY STYLES ===
   class TITLE titleStyle
