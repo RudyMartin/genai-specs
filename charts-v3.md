@@ -5,13 +5,15 @@
 graph TD
 
 
-
+subgraph MVP1 QA Agent
 
 
 
 
   %% === DOMAIN AREA ===
-  subgraph Automated QA System
+  subgraph A [" "]
+  style A stroke:transparent;
+           
     DOCUMENT[DOCUMENT]
     REVIEW[REVIEW]
     FINDING[FINDING]
@@ -62,7 +64,8 @@ graph TD
     TASK -->|ASSIGNED_TO| AIAGENT
   end
   end
-  
+
+end  
 
 %% === Corporate Palette Class Definitions ===
 classDef darkGreen fill:#05341D,stroke:#05341D,color:#FFFFFF;
