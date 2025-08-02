@@ -78,6 +78,8 @@ classDef mustardYellow fill:#FFB400,stroke:#FFB400,color:#000000;
 classDef forestGreen fill:#2C6937,stroke:#2C6937,color:#FFFFFF;
 classDef deepMagenta fill:#911A5B,stroke:#911A5B,color:#FFFFFF;
 
+classDef h1Style fontSize:13px,fontFamily:Arial;
+
 
 
   %% === APPLY STYLES ===
